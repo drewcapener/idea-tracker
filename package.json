@@ -4,7 +4,8 @@
   "description": "Backend for a simple idea tracking app",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Drew Capener",
@@ -15,7 +16,8 @@
     "express": "^4.18.1",
     "express-oauth2-jwt-bearer": "^1.1.0",
     "googleapis": "^100.0.0",
-    "joi": "^17.6.0"
+    "joi": "^17.6.0",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "nodemon": "^2.0.16"

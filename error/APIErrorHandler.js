@@ -1,7 +1,7 @@
 const APIError = require("./APIError");
 
 const apiErrorHandler = (err, req, res, next) => {
-    // console.log(err);
+    console.error(err);
     res.set('Content-Type', 'application/problem+json')
     if (err.status === 401) {
         err = APIError.notAuthorized()
